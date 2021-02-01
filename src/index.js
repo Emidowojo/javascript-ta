@@ -1,7 +1,14 @@
 // complete the function
-function palindrom(str) {
-  // code goes here
+const str = 'solos'
+const isPalindrome = (inStr) => {
+  for (let i=0; i < str.length; i+=1) {
+    if (str[i] !== str[str.length-1-i]) {
+      return false;
+    }
+  }
+  return true;
 }
+Console.log(isPalindrom(str));
 
 function solution(arg) {
   return palindrom(arg);
